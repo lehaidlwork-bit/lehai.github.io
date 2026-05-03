@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lê Hải Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #020617);
+    color: white;
+}
+
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 60px 0;
+}
+
+.avatar {
+    width: 260px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+}
+
+.info h1 {
+    font-size: 42px;
+}
+
+.info p {
+    color: #94a3b8;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.badge {
+    margin-top: 10px;
+    display: inline-block;
+    background: #22c55e;
+    color: black;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-weight: bold;
+}
+
+.btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #38bdf8;
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Section */
+.section {
+    margin-top: 60px;
+}
+
+.section h2 {
+    border-left: 4px solid #38bdf8;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+/* Card */
+.card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* Skills */
+.skills span {
+    display: inline-block;
+    background: #38bdf8;
+    color: black;
+    padding: 6px 12px;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 80px;
+    color: #94a3b8;
+}
+
+/* Mobile */
+@media(max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .avatar {
+        margin-top: 20px;
+        width: 200px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+    <div class="info">
+        <h1>Đặng Lương Lê Hải</h1>
+        <p>Skilled Tele Payment | Home Credit Việt Nam</p>
+        <div class="badge">5 năm kinh nghiệm</div>
+        <br>
+        <a href="mailto:your@email.com" class="btn">Liên hệ</a>
+    </div>
+
+    <img src="avatar.jpg" class="avatar">
+</header>
+
+<div class="section">
+    <h2>👤 Giới thiệu</h2>
+    <div class="card">
+        Tôi có hơn 5 năm kinh nghiệm trong lĩnh vực tài chính tiêu dùng, chuyên xử lý thanh toán và hỗ trợ khách hàng qua điện thoại. Luôn đảm bảo hiệu suất công việc và chất lượng dịch vụ.
+    </div>
+</div>
+
+<div class="section">
+    <h2>💼 Kinh nghiệm</h2>
+    <div class="card">
+        <b>Công Ty Tài Chính TNHH MTV Home Credit Việt Nam</b><br>
+        Skilled Tele Payment<br>
+        <small>2019 - Hiện tại</small>
+        <ul>
+            <li>Xử lý thanh toán khách hàng</li>
+            <li>Tư vấn và hỗ trợ qua điện thoại</li>
+            <li>Đảm bảo KPI ổn định</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section">
+    <h2>🚀 Kỹ năng</h2>
+    <div class="skills">
+        <span>Giao tiếp</span>
+        <span>Tele Sales</span>
+        <span>Xử lý tình huống</span>
+        <span>Excel</span>
+    </div>
+</div>
+
+<div class="section">
+    <h2>🏆 Thành tích</h2>
+    <div class="card">
+        - 5 năm kinh nghiệm thực tế<br>
+        - Hoàn thành KPI liên tục<br>
+        - Kỹ năng chăm sóc khách hàng tốt
+    </div>
+</div>
+
+<footer>
+    © 2026 - Lê Hải Portfolio
+</footer>
+
+</div>
+
+</body>
+</html>
