@@ -1,188 +1,198 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lê Hải Portfolio</title>
+    <meta charset="UTF-8">
+    <title>CV - Tele Payment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
 
-body{
-    font-family:'Segoe UI',sans-serif;
-    background:linear-gradient(135deg,#f1f5f9,#e2e8f0);
-    color:#0f172a;
-}
+        body {
+            background: #e5e5e5;
+        }
 
-.container{max-width:1100px;margin:auto;padding:20px}
+        .cv-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: #0f2f4f;
+            color: white;
+            display: flex;
+            padding: 40px;
+            gap: 40px;
+        }
 
-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    flex-wrap:wrap;
-    padding:60px 0;
-}
+        .left {
+            width: 40%;
+        }
 
-.avatar{
-    width:240px;
-    border-radius:20px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.2);
-}
+        .right {
+            width: 60%;
+        }
 
-.info h1{font-size:42px}
-.info p{color:#475569;margin-top:10px}
+        h1 {
+            font-size: 34px;
+            color: #4db8ff;
+        }
 
-.badge{
-    margin-top:10px;
-    background:#22c55e;
-    padding:6px 14px;
-    border-radius:999px;
-    font-weight:bold;
-    display:inline-block;
-}
+        .job-title {
+            font-weight: bold;
+            margin: 10px 0;
+        }
 
-.section{margin-top:50px}
+        .info {
+            font-size: 14px;
+            line-height: 1.6;
+        }
 
-.section h2{
-    border-left:4px solid #38bdf8;
-    padding-left:10px;
-    margin-bottom:20px;
-}
+        .section {
+            margin-top: 30px;
+        }
 
-.card{
-    background:white;
-    padding:20px;
-    border-radius:12px;
-    margin-bottom:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.08);
-}
+        .section h2 {
+            font-size: 16px;
+            border-bottom: 1px solid white;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
 
-.skills span{
-    display:inline-block;
-    background:#38bdf8;
-    padding:6px 12px;
-    margin:5px;
-    border-radius:8px;
-}
+        ul {
+            padding-left: 18px;
+        }
 
-ul{padding-left:20px;margin-top:10px}
+        li {
+            margin-bottom: 6px;
+        }
 
-footer{
-    text-align:center;
-    margin-top:60px;
-    color:#64748b;
-}
+        .experience-item {
+            margin-bottom: 20px;
+        }
 
-</style>
+        .highlight {
+            color: #4db8ff;
+            font-weight: bold;
+        }
+
+        .small {
+            font-size: 13px;
+            color: #ddd;
+        }
+
+        /* AVATAR */
+        .avatar {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .avatar img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #4db8ff;
+        }
+
+    </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="cv-container">
 
-<header>
-    <div class="info">
+    <!-- LEFT -->
+    <div class="left">
+
         <h1>Đặng Lương Lê Hải</h1>
-        <p>Skilled Tele Payment | Home Credit Việt Nam</p>
-        <div class="badge">5+ năm kinh nghiệm</div>
-    </div>
-    <img src="avatar.jpg" class="avatar">
-</header>
+        <div class="job-title">SKILLED TELE PAYMENT</div>
 
-<!-- GIỚI THIỆU -->
-<div class="section">
-    <h2>👤 Giới thiệu</h2>
-    <div class="card">
-        Tôi là nhân viên tài chính với hơn 5 năm kinh nghiệm trong lĩnh vực thanh toán và chăm sóc khách hàng qua điện thoại. 
-        Có khả năng xử lý tình huống nhanh, giao tiếp hiệu quả và luôn đảm bảo KPI trong môi trường áp lực cao.
-    </div>
-</div>
+        <div class="info">
+            📞 095.07.2000 <br>
+            📧 dangl@lehai.id.vn <br>
+            📍 Hồ Chí Minh
+        </div>
 
-<!-- MỤC TIÊU -->
-<div class="section">
-    <h2>🎯 Mục tiêu nghề nghiệp</h2>
-    <div class="card">
-        Mong muốn phát triển chuyên sâu trong lĩnh vực tài chính tiêu dùng, nâng cao kỹ năng quản lý khách hàng và tiến tới vị trí quản lý hoặc giám sát đội nhóm trong tương lai.
-    </div>
-</div>
+        <!-- AVATAR -->
+        <div class="avatar">
+            <img src="avatar.jpg" alt="avatar">
+        </div>
 
-<!-- KINH NGHIỆM -->
-<div class="section">
-    <h2>💼 Kinh nghiệm làm việc</h2>
-    <div class="card">
-        <b>Home Credit Việt Nam</b><br>
-        Skilled Tele Payment<br>
-        <small>2019 - Hiện tại</small>
-        <ul>
-            <li>Xử lý thanh toán và hỗ trợ khách hàng qua điện thoại</li>
-            <li>Tư vấn giải pháp tài chính phù hợp</li>
-            <li>Đảm bảo chỉ tiêu KPI hàng tháng</li>
-            <li>Giải quyết khiếu nại và xử lý tình huống phát sinh</li>
-        </ul>
-    </div>
-</div>
+        <div class="section">
+            <h2>TÓM TẮT</h2>
+            <p class="small">
+                Tôi là nhân viên Tele Payment với hơn 5 năm kinh nghiệm trong lĩnh vực tài chính tiêu dùng.
+                Có thế mạnh trong giao tiếp, xử lý từ chối và chăm sóc khách hàng qua điện thoại.
+                Luôn đạt hiệu suất cao, duy trì tỷ lệ chuyển đổi tốt và đảm bảo KPI trong môi trường áp lực cao.
+                Có khả năng thích nghi nhanh, làm việc nhóm tốt và tinh thần trách nhiệm cao.
+            </p>
+        </div>
 
-<!-- KỸ NĂNG -->
-<div class="section">
-    <h2>🚀 Kỹ năng</h2>
-    <div class="card skills">
-        <span>Giao tiếp khách hàng</span>
-        <span>Tele Sales</span>
-        <span>Xử lý tình huống</span>
-        <span>Chăm sóc khách hàng</span>
-        <span>Microsoft Excel</span>
-        <span>Làm việc nhóm</span>
-    </div>
-</div>
+        <div class="section">
+            <h2>GIÁO DỤC</h2>
 
-<!-- THÀNH TÍCH -->
-<div class="section">
-    <h2>🏆 Thành tích</h2>
-    <div class="card">
-        <ul>
-            <li>Hoàn thành KPI liên tục trong nhiều năm</li>
-            <li>Top nhân viên tư vấn hiệu quả</li>
-            <li>Kỹ năng giao tiếp và xử lý khách hàng tốt</li>
-        </ul>
-    </div>
-</div>
+            <p class="highlight">Đại học Mở TP Hồ Chí Minh</p>
+            <p class="small">Chuyên ngành: Quản trị nhân lực</p>
+            <p class="small">Đang theo học</p>
 
-<!-- HỌC VẤN -->
-<div class="section">
-    <h2>🎓 Học vấn</h2>
-    <div class="card">
-        Đại học Mở Thành phố Hồ Chí Minh<br>
-        Chuyên ngành: Quản lý nhân lực
-    </div>
-</div>
+            <br>
 
-<!-- ĐIỂM MẠNH -->
-<div class="section">
-    <h2>🌟 Điểm mạnh</h2>
-    <div class="card">
-        <ul>
-            <li>Chịu áp lực công việc tốt</li>
-            <li>Giao tiếp rõ ràng, thuyết phục</li>
-            <li>Tư duy dịch vụ khách hàng</li>
-            <li>Kỷ luật và trách nhiệm cao</li>
-        </ul>
-    </div>
-</div>
+            <p class="highlight">Kỹ năng bổ trợ</p>
+            <ul class="small">
+                <li>Giao tiếp chuyên nghiệp</li>
+                <li>Đàm phán & thuyết phục</li>
+                <li>Phân tích hành vi khách hàng</li>
+                <li>Quản lý dữ liệu khách hàng</li>
+            </ul>
+        </div>
 
-<!-- LIÊN HỆ -->
-<div class="section">
-    <h2>📞 Liên hệ</h2>
-    <div class="card">
-        <p><b>SĐT:</b> 0995.07.2000</p>
-        <p><b>Email:</b> hai@lehai.id.vn</p>
-        <p><b>Website:</b> https://lehai.id.vn</p>
     </div>
-</div>
 
-<footer>
-    © 2026 - Đặng Lương Lê Hải
-</footer>
+    <!-- RIGHT -->
+    <div class="right">
+
+        <div class="section">
+            <h2>KINH NGHIỆM LÀM VIỆC</h2>
+
+            <div class="experience-item">
+                <p class="highlight">Nhân viên Tele Payment</p>
+                <p class="small">Công ty Tài chính TNHH MTV Home Credit Việt Nam</p>
+                <p class="small">09/2021 - Hiện tại</p>
+
+                <ul class="small">
+                    <li>Gọi điện nhắc thanh toán và hỗ trợ khách hàng về các khoản vay.</li>
+                    <li>Duy trì KPI > 110% trong nhiều tháng liên tiếp.</li>
+                    <li>Xử lý khiếu nại & khách hàng khó.</li>
+                    <li>Đào tạo nhân viên mới.</li>
+                    <li>Cải tiến quy trình tăng tỷ lệ thanh toán.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="section">
+            <h2>KỸ NĂNG</h2>
+
+            <ul class="small">
+                <li>Tele Payment chuyên sâu</li>
+                <li>Chăm sóc khách hàng</li>
+                <li>Xử lý từ chối</li>
+                <li>Đàm phán</li>
+                <li>CRM</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>MỤC TIÊU</h2>
+            <p class="small">
+                Phát triển lên vị trí Team Leader trong lĩnh vực Tele Payment và nâng cao hiệu suất đội nhóm.
+            </p>
+        </div>
+
+    </div>
 
 </div>
 
