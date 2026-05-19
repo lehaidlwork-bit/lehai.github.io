@@ -6,11 +6,9 @@
 
 <title>CV - Đặng Lương Lê Hải</title>
 
-<!-- FONT -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<!-- ICON -->
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 
@@ -38,18 +36,16 @@ body{
     display:grid;
     grid-template-columns:32% 68%;
     overflow:hidden;
-    box-shadow:0 0 25px rgba(0,0,0,0.15);
+    box-shadow:0 0 20px rgba(0,0,0,0.12);
 }
 
 /* ===== LEFT ===== */
 
 .left{
-    background:linear-gradient(180deg,#011327,#07274d);
-    color:#fff;
+    background:#041f3d;
+    color:white;
     padding:25px 22px;
 }
-
-/* AVATAR */
 
 .avatar{
     text-align:center;
@@ -57,32 +53,31 @@ body{
 }
 
 .avatar img{
-    width:155px;
-    height:155px;
+    width:150px;
+    height:150px;
     border-radius:50%;
     object-fit:cover;
     border:4px solid #3bbcff;
-    box-shadow:0 0 15px rgba(59,188,255,.5);
 }
 
 /* SECTION */
 
 .section{
-    margin-top:30px;
+    margin-top:28px;
 }
 
 .left-title{
     display:flex;
     align-items:center;
-    gap:12px;
+    gap:10px;
     margin-bottom:18px;
 }
 
 .left-title h2{
-    color:#3bbcff;
-    font-size:20px;
-    white-space:nowrap;
+    color:#2eb7ff;
+    font-size:22px;
     font-weight:700;
+    white-space:nowrap;
 }
 
 .left-title .line{
@@ -95,35 +90,36 @@ body{
 
 .info{
     display:flex;
-    gap:12px;
-    margin-bottom:15px;
-    line-height:1.7;
-    font-size:13px;
+    gap:10px;
+    margin-bottom:14px;
     color:#e2e8f0;
+    font-size:13px;
+    line-height:1.7;
 }
 
 .info i{
-    color:#3bbcff;
+    color:#2eb7ff;
     width:18px;
     margin-top:4px;
 }
 
-/* SKILL */
+/* ===== SKILL ===== */
 
 .skill{
-    margin-bottom:15px;
+    margin-bottom:18px;
 }
 
 .skill-head{
     display:flex;
     justify-content:space-between;
-    margin-bottom:5px;
-    font-size:12px;
+    margin-bottom:6px;
+    font-size:13px;
+    font-weight:500;
 }
 
 .bar{
     width:100%;
-    height:8px;
+    height:9px;
     background:#163a61;
     border-radius:999px;
     overflow:hidden;
@@ -131,7 +127,25 @@ body{
 
 .fill{
     height:100%;
-    background:#3bbcff;
+    background:#39bfff;
+}
+
+/* ===== LANGUAGE ===== */
+
+.language{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:16px;
+    color:#ffffff;
+    font-size:13px;
+}
+
+.language .dot{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    background:#39bfff;
 }
 
 /* ===== RIGHT ===== */
@@ -143,7 +157,7 @@ body{
 /* HERO */
 
 .hero h1{
-    font-size:52px;
+    font-size:50px;
     line-height:1;
     color:#02142d;
     margin-bottom:10px;
@@ -151,14 +165,14 @@ body{
 
 .hero h2{
     color:#1d9bf0;
-    font-size:22px;
+    font-size:20px;
     margin-bottom:15px;
 }
 
 .hero p{
     color:#475569;
     line-height:1.8;
-    font-size:13px;
+    font-size:12px;
 }
 
 /* TITLE */
@@ -166,14 +180,14 @@ body{
 .title{
     display:flex;
     align-items:center;
-    gap:15px;
-    margin-top:28px;
-    margin-bottom:20px;
+    gap:12px;
+    margin-top:25px;
+    margin-bottom:18px;
 }
 
 .title h2{
     color:#1d9bf0;
-    font-size:24px;
+    font-size:22px;
     white-space:nowrap;
 }
 
@@ -188,46 +202,42 @@ body{
 .achievement{
     display:grid;
     grid-template-columns:repeat(5,1fr);
-    gap:10px;
+    gap:12px;
 }
 
 .box{
-    background:#041a36;
-    color:white;
-    border-radius:14px;
-    padding:18px 10px;
     text-align:center;
 }
 
 .box i{
-    color:#3bbcff;
+    color:#1d9bf0;
     font-size:28px;
-    margin-bottom:10px;
+    margin-bottom:8px;
 }
 
 .box h1{
-    color:#3bbcff;
-    font-size:34px;
+    color:#02142d;
+    font-size:32px;
 }
 
 .box p{
-    margin-top:8px;
-    line-height:1.5;
+    color:#475569;
     font-size:11px;
+    line-height:1.5;
 }
 
 /* ===== EXPERIENCE ===== */
 
 .exp{
     display:grid;
-    grid-template-columns:110px 1fr 150px;
+    grid-template-columns:110px 1fr 140px;
     gap:18px;
     margin-top:15px;
 }
 
 .year{
     color:#1d9bf0;
-    font-size:18px;
+    font-size:16px;
     font-weight:700;
     line-height:1.5;
 }
@@ -239,15 +249,15 @@ body{
 
 .job{
     position:relative;
-    margin-bottom:28px;
+    margin-bottom:25px;
 }
 
 .job::before{
     content:'';
     width:12px;
     height:12px;
-    border-radius:50%;
     background:#1d9bf0;
+    border-radius:50%;
     position:absolute;
     left:-27px;
     top:5px;
@@ -255,13 +265,13 @@ body{
 
 .job h3{
     color:#02142d;
-    font-size:20px;
+    font-size:18px;
 }
 
 .job h4{
     color:#1d9bf0;
     margin:5px 0 10px;
-    font-size:15px;
+    font-size:14px;
 }
 
 .job ul{
@@ -270,9 +280,9 @@ body{
 
 .job ul li{
     color:#475569;
-    margin-bottom:6px;
-    line-height:1.6;
     font-size:12px;
+    line-height:1.7;
+    margin-bottom:5px;
 }
 
 /* TROPHY */
@@ -285,13 +295,13 @@ body{
 
 .trophy i{
     color:#ffb300;
-    font-size:24px;
+    font-size:22px;
 }
 
 .trophy p{
     color:#475569;
+    font-size:11px;
     line-height:1.6;
-    font-size:12px;
 }
 
 /* ===== GRID ===== */
@@ -300,25 +310,25 @@ body{
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:15px;
-    margin-top:25px;
+    margin-top:20px;
 }
 
 .card{
     border:1px solid #dbeafe;
-    border-radius:14px;
-    padding:18px;
+    border-radius:12px;
+    padding:16px;
 }
 
 .card h2{
     color:#1d9bf0;
-    font-size:20px;
-    margin-bottom:12px;
+    font-size:18px;
+    margin-bottom:10px;
 }
 
 .card p{
     color:#475569;
-    line-height:1.8;
     font-size:12px;
+    line-height:1.7;
 }
 
 /* TAG */
@@ -332,18 +342,18 @@ body{
 .tag{
     background:#e0f2fe;
     color:#0369a1;
-    padding:7px 12px;
+    padding:6px 10px;
     border-radius:999px;
-    font-size:11px;
+    font-size:10px;
 }
 
 /* ===== GOAL ===== */
 
 .goal{
     border:1px solid #dbeafe;
-    border-radius:14px;
+    border-radius:12px;
     padding:18px;
-    margin-top:20px;
+    margin-top:18px;
 }
 
 .goal-grid{
@@ -358,30 +368,30 @@ body{
 
 .goal-box i{
     color:#1d9bf0;
-    font-size:24px;
-    margin-bottom:10px;
+    font-size:22px;
+    margin-bottom:8px;
 }
 
 .goal-box p{
     color:#475569;
-    line-height:1.7;
     font-size:11px;
+    line-height:1.6;
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER */
 
 .footer{
     margin-top:20px;
-    background:#031a35;
+    background:#06264f;
     color:white;
     text-align:center;
     padding:10px;
     border-radius:999px;
-    font-size:12px;
+    font-size:11px;
     font-style:italic;
 }
 
-/* ===== PRINT ===== */
+/* PRINT */
 
 @media print{
 
@@ -419,7 +429,7 @@ body{
         <div class="section">
 
             <div class="left-title">
-                <h2>THÔNG TIN LIÊN HỆ</h2>
+                <h2>LIÊN HỆ</h2>
                 <div class="line"></div>
             </div>
 
@@ -464,16 +474,9 @@ body{
                 <i class="fa-solid fa-graduation-cap"></i>
 
                 <div>
-
-                    <strong>ĐẠI HỌC MỞ TP.HCM</strong><br>
-
-                    Ngành: Quản trị nhân lực<br>
-
-                    Trạng thái: Đang theo học<br><br>
-
-                    Tập trung nghiên cứu về quản trị nhân sự,
-                    tuyển dụng, đào tạo và phát triển nguồn nhân lực.
-
+                    <strong>Đại Học Mở TP.HCM</strong><br>
+                    Ngành Quản trị nhân lực<br>
+                    Trạng thái: Đang theo học
                 </div>
 
             </div>
@@ -490,7 +493,6 @@ body{
             </div>
 
             <div class="skill">
-
                 <div class="skill-head">
                     <span>Giao tiếp khách hàng</span>
                     <span>95%</span>
@@ -499,11 +501,9 @@ body{
                 <div class="bar">
                     <div class="fill" style="width:95%"></div>
                 </div>
-
             </div>
 
             <div class="skill">
-
                 <div class="skill-head">
                     <span>Xử lý tình huống</span>
                     <span>90%</span>
@@ -512,11 +512,9 @@ body{
                 <div class="bar">
                     <div class="fill" style="width:90%"></div>
                 </div>
-
             </div>
 
             <div class="skill">
-
                 <div class="skill-head">
                     <span>Microsoft Office</span>
                     <span>85%</span>
@@ -525,11 +523,9 @@ body{
                 <div class="bar">
                     <div class="fill" style="width:85%"></div>
                 </div>
-
             </div>
 
             <div class="skill">
-
                 <div class="skill-head">
                     <span>Quản trị nhân lực</span>
                     <span>75%</span>
@@ -538,11 +534,9 @@ body{
                 <div class="bar">
                     <div class="fill" style="width:75%"></div>
                 </div>
-
             </div>
 
             <div class="skill">
-
                 <div class="skill-head">
                     <span>Tuyển dụng cơ bản</span>
                     <span>75%</span>
@@ -551,11 +545,9 @@ body{
                 <div class="bar">
                     <div class="fill" style="width:75%"></div>
                 </div>
-
             </div>
 
             <div class="skill">
-
                 <div class="skill-head">
                     <span>Training nội bộ</span>
                     <span>70%</span>
@@ -564,7 +556,6 @@ body{
                 <div class="bar">
                     <div class="fill" style="width:70%"></div>
                 </div>
-
             </div>
 
         </div>
@@ -578,14 +569,14 @@ body{
                 <div class="line"></div>
             </div>
 
-            <div class="info">
-                <i class="fa-solid fa-circle"></i>
-                Tiếng Việt: Bản ngữ
+            <div class="language">
+                <div class="dot"></div>
+                <span>Tiếng Việt: Bản ngữ</span>
             </div>
 
-            <div class="info">
-                <i class="fa-solid fa-circle"></i>
-                Tiếng Anh: Cơ bản
+            <div class="language">
+                <div class="dot"></div>
+                <span>Tiếng Anh: Cơ bản</span>
             </div>
 
         </div>
@@ -596,8 +587,6 @@ body{
 
     <div class="right">
 
-        <!-- HERO -->
-
         <div class="hero">
 
             <h1>
@@ -605,16 +594,14 @@ body{
                 Lê Hải
             </h1>
 
-            <h2>
-                HUMAN RESOURCE / HR ADMIN
-            </h2>
+            <h2>HUMAN RESOURCE / HR ADMIN</h2>
 
             <p>
                 Skilled Tele Payment với hơn 5 năm kinh nghiệm
                 trong lĩnh vực tài chính và chăm sóc khách hàng.
-                Hiện định hướng phát triển chuyên sâu sang lĩnh vực
-                Quản trị nhân lực nhằm nâng cao kỹ năng quản lý,
-                tuyển dụng và vận hành doanh nghiệp.
+                Định hướng phát triển chuyên sâu sang lĩnh vực
+                quản trị nhân lực để nâng cao kỹ năng tuyển dụng,
+                đào tạo và vận hành doanh nghiệp.
             </p>
 
         </div>
@@ -636,31 +623,31 @@ body{
             <div class="box">
                 <i class="fa-solid fa-award"></i>
                 <h1>5+</h1>
-                <p>Năm kinh nghiệm làm việc</p>
+                <p>Năm kinh nghiệm</p>
             </div>
 
             <div class="box">
                 <i class="fa-solid fa-users"></i>
                 <h1>1000+</h1>
-                <p>Khách hàng hỗ trợ mỗi tháng</p>
+                <p>Khách hàng hỗ trợ</p>
             </div>
 
             <div class="box">
                 <i class="fa-solid fa-chart-line"></i>
                 <h1>90%</h1>
-                <p>Tỷ lệ xử lý khách hàng hiệu quả</p>
+                <p>Xử lý hiệu quả</p>
             </div>
 
             <div class="box">
                 <i class="fa-solid fa-clock"></i>
                 <h1>24/7</h1>
-                <p>Tinh thần học hỏi và phát triển</p>
+                <p>Tinh thần học hỏi</p>
             </div>
 
             <div class="box">
                 <i class="fa-solid fa-trophy"></i>
                 <h1>3</h1>
-                <p>Năm liên tiếp nhân viên đàm phán tốt</p>
+                <p>Năm đàm phán tốt</p>
             </div>
 
         </div>
@@ -669,7 +656,7 @@ body{
 
         <div class="title">
 
-            <h2>KINH NGHIỆM LÀM VIỆC</h2>
+            <h2>KINH NGHIỆM</h2>
 
             <div class="line"></div>
 
@@ -679,7 +666,7 @@ body{
 
             <div class="year">
                 09/2021<br>
-                - Hiện tại
+                - Nay
             </div>
 
             <div class="content">
@@ -692,13 +679,11 @@ body{
 
                     <ul>
 
-                        <li>Hỗ trợ khách hàng thanh toán và xử lý dữ liệu tài chính.</li>
-
-                        <li>Chăm sóc khách hàng qua điện thoại và các nền tảng khác.</li>
+                        <li>Hỗ trợ khách hàng thanh toán và xử lý dữ liệu.</li>
 
                         <li>Giải quyết tình huống phát sinh nhanh chóng.</li>
 
-                        <li>Đạt và vượt KPI hàng tháng.</li>
+                        <li>Đạt KPI hàng tháng và nâng cao trải nghiệm khách hàng.</li>
 
                     </ul>
 
@@ -706,17 +691,15 @@ body{
 
                 <div class="job">
 
-                    <h3>HUMAN RESOURCE</h3>
+                    <h3>ĐỊNH HƯỚNG HR</h3>
 
                     <h4>HR Admin / Recruitment</h4>
 
                     <ul>
 
-                        <li>Định hướng phát triển chuyên sâu về quản trị nhân sự.</li>
+                        <li>Phát triển kỹ năng tuyển dụng và đào tạo nhân sự.</li>
 
-                        <li>Học hỏi kỹ năng tuyển dụng và đào tạo nhân sự.</li>
-
-                        <li>Mong muốn phát triển bền vững cùng doanh nghiệp.</li>
+                        <li>Nâng cao kỹ năng quản trị và vận hành doanh nghiệp.</li>
 
                     </ul>
 
@@ -730,8 +713,7 @@ body{
 
                 <p>
                     Nhân viên đàm phán tốt<br>
-                    3 năm liên tiếp<br>
-                    (2022 - 2024)
+                    3 năm liên tiếp
                 </p>
 
             </div>
@@ -742,100 +724,32 @@ body{
 
         <div class="grid">
 
-            <!-- EDUCATION -->
-
             <div class="card">
 
-                <h2>HỌC VẤN</h2>
-
-                <p>
-
-                    <strong>ĐẠI HỌC MỞ TP.HCM</strong><br>
-
-                    Ngành: Quản trị nhân lực<br>
-
-                    Trạng thái: Đang theo học<br><br>
-
-                    Nghiên cứu chuyên sâu về quản trị nhân sự,
-                    tuyển dụng, đào tạo và phát triển nguồn nhân lực.
-
-                </p>
-
-            </div>
-
-            <!-- SPECIAL -->
-
-            <div class="card">
-
-                <h2>KỸ NĂNG CHUYÊN MÔN</h2>
+                <h2>CHUYÊN MÔN</h2>
 
                 <div class="tags">
 
-                    <div class="tag">Human Resource</div>
-
                     <div class="tag">HR Admin</div>
-
                     <div class="tag">Recruitment</div>
-
                     <div class="tag">Customer Service</div>
-
-                    <div class="tag">Office Skills</div>
-
-                    <div class="tag">Google Workspace</div>
-
                     <div class="tag">Communication</div>
-
                     <div class="tag">Teamwork</div>
+                    <div class="tag">Office Skills</div>
 
                 </div>
 
             </div>
 
-        </div>
+            <div class="card">
 
-        <!-- GOAL -->
+                <h2>MỤC TIÊU</h2>
 
-        <div class="title">
-
-            <h2>MỤC TIÊU NGHỀ NGHIỆP</h2>
-
-            <div class="line"></div>
-
-        </div>
-
-        <div class="goal">
-
-            <div class="goal-grid">
-
-                <div class="goal-box">
-
-                    <i class="fa-solid fa-building"></i>
-
-                    <p>
-                        Trở thành HR Executive / HR Admin chuyên nghiệp.
-                    </p>
-
-                </div>
-
-                <div class="goal-box">
-
-                    <i class="fa-solid fa-users"></i>
-
-                    <p>
-                        Phát triển kỹ năng tuyển dụng, đào tạo và quản lý nhân sự.
-                    </p>
-
-                </div>
-
-                <div class="goal-box">
-
-                    <i class="fa-solid fa-medal"></i>
-
-                    <p>
-                        Học hỏi không ngừng và nâng cao năng lực bản thân.
-                    </p>
-
-                </div>
+                <p>
+                    Mong muốn trở thành HR Executive / HR Admin
+                    chuyên nghiệp và phát triển lâu dài trong lĩnh vực
+                    quản trị nhân lực.
+                </p>
 
             </div>
 
@@ -844,9 +758,7 @@ body{
         <!-- FOOTER -->
 
         <div class="footer">
-
             “Luôn tận tâm - Không ngừng học hỏi - Hướng đến giá trị lâu dài”
-
         </div>
 
     </div>
