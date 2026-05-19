@@ -1,200 +1,590 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>CV - Tele Payment</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', sans-serif;
-        }
+  <title>Đặng Lương Lê Hải | Human Resource Portfolio</title>
 
-        body {
-            background: #e5e5e5;
-        }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        .cv-container {
-            max-width: 1000px;
-            margin: 40px auto;
-            background: #0f2f4f;
-            color: white;
-            display: flex;
-            padding: 40px;
-            gap: 40px;
-        }
+  <style>
 
-        .left {
-            width: 40%;
-        }
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+      scroll-behavior:smooth;
+    }
 
-        .right {
-            width: 60%;
-        }
+    body{
+      background:#0f172a;
+      color:white;
+      line-height:1.7;
+    }
 
-        h1 {
-            font-size: 34px;
-            color: #4db8ff;
-        }
+    .container{
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+    }
 
-        .job-title {
-            font-weight: bold;
-            margin: 10px 0;
-        }
+    section{
+      padding:90px 0;
+    }
 
-        .info {
-            font-size: 14px;
-            line-height: 1.6;
-        }
+    .title{
+      text-align:center;
+      font-size:40px;
+      margin-bottom:55px;
+      color:#38bdf8;
+    }
 
-        .section {
-            margin-top: 30px;
-        }
+    /* HEADER */
 
-        .section h2 {
-            font-size: 16px;
-            border-bottom: 1px solid white;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-        }
+    header{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      background:
+      linear-gradient(rgba(15,23,42,0.9),rgba(15,23,42,0.95)),
+      url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2070&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+    }
 
-        ul {
-            padding-left: 18px;
-        }
+    .hero{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:60px;
+      align-items:center;
+    }
 
-        li {
-            margin-bottom: 6px;
-        }
+    .hero-text h1{
+      font-size:65px;
+      line-height:1.2;
+      margin-bottom:20px;
+    }
 
-        .experience-item {
-            margin-bottom: 20px;
-        }
+    .hero-text span{
+      color:#38bdf8;
+    }
 
-        .highlight {
-            color: #4db8ff;
-            font-weight: bold;
-        }
+    .hero-text h3{
+      color:#cbd5e1;
+      margin-bottom:20px;
+      font-weight:400;
+      font-size:22px;
+    }
 
-        .small {
-            font-size: 13px;
-            color: #ddd;
-        }
+    .hero-text p{
+      color:#d1d5db;
+      margin-bottom:30px;
+      font-size:17px;
+    }
 
-        /* AVATAR */
-        .avatar {
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
+    .btn{
+      display:inline-block;
+      padding:15px 35px;
+      background:#38bdf8;
+      color:#000;
+      border-radius:14px;
+      text-decoration:none;
+      font-weight:600;
+      transition:0.3s;
+    }
 
-        .avatar img {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #4db8ff;
-        }
+    .btn:hover{
+      transform:translateY(-5px);
+      box-shadow:0 0 20px rgba(56,189,248,0.5);
+    }
 
-    </style>
+    .hero-image{
+      text-align:center;
+    }
+
+    .hero-image img{
+      width:340px;
+      border-radius:30px;
+      border:5px solid #38bdf8;
+      box-shadow:0 0 35px rgba(56,189,248,0.4);
+    }
+
+    /* ABOUT */
+
+    .about{
+      background:#111827;
+      padding:45px;
+      border-radius:24px;
+    }
+
+    .about p{
+      margin-bottom:18px;
+      color:#d1d5db;
+    }
+
+    /* CARD */
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#1e293b;
+      padding:30px;
+      border-radius:22px;
+      transition:0.3s;
+      border:1px solid transparent;
+    }
+
+    .card:hover{
+      transform:translateY(-7px);
+      border-color:#38bdf8;
+    }
+
+    .card h3{
+      color:#38bdf8;
+      margin-bottom:15px;
+    }
+
+    .card p{
+      color:#cbd5e1;
+      margin-bottom:10px;
+      font-size:15px;
+    }
+
+    /* SKILL */
+
+    .skills{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:15px;
+    }
+
+    .skill{
+      background:#1e293b;
+      padding:14px 24px;
+      border-radius:999px;
+      transition:0.3s;
+    }
+
+    .skill:hover{
+      background:#38bdf8;
+      color:#000;
+    }
+
+    /* STATS */
+
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:25px;
+      text-align:center;
+    }
+
+    .stat-box{
+      background:#111827;
+      padding:35px;
+      border-radius:20px;
+    }
+
+    .stat-box h2{
+      color:#38bdf8;
+      font-size:45px;
+      margin-bottom:10px;
+    }
+
+    .stat-box p{
+      color:#cbd5e1;
+    }
+
+    /* TIMELINE */
+
+    .timeline{
+      border-left:3px solid #38bdf8;
+      padding-left:30px;
+    }
+
+    .timeline-item{
+      margin-bottom:35px;
+    }
+
+    .timeline-item h3{
+      color:#38bdf8;
+      margin-bottom:8px;
+    }
+
+    .timeline-item p{
+      color:#cbd5e1;
+    }
+
+    /* FOOTER */
+
+    footer{
+      border-top:1px solid #1e293b;
+      text-align:center;
+      padding:30px;
+      color:#94a3b8;
+    }
+
+    /* MOBILE */
+
+    @media(max-width:768px){
+
+      .hero{
+        grid-template-columns:1fr;
+        text-align:center;
+      }
+
+      .hero-text h1{
+        font-size:45px;
+      }
+
+      .hero-image img{
+        width:250px;
+      }
+
+    }
+
+  </style>
 </head>
 
 <body>
 
-<div class="cv-container">
+<!-- HEADER -->
 
-    <!-- LEFT -->
-    <div class="left">
+<header>
 
-        <h1>Đặng Lương Lê Hải</h1>
-        <div class="job-title">SKILLED TELE PAYMENT</div>
+  <div class="container hero">
 
-        <div class="info">
-            📞 095.07.2000 <br>
-            📧 dangl@lehai.id.vn <br>
-            📍 Hồ Chí Minh
-        </div>
+    <div class="hero-text">
 
-        <!-- AVATAR -->
-        <div class="avatar">
-            <img src="avatar.jpg" alt="avatar">
-        </div>
+      <h1>
+        Đặng Lương <span>Lê Hải</span>
+      </h1>
 
-        <div class="section">
-            <h2>TÓM TẮT</h2>
-            <p class="small">
-                Tôi là nhân viên Tele Payment với hơn 5 năm kinh nghiệm trong lĩnh vực tài chính tiêu dùng.
-                Có thế mạnh trong giao tiếp, xử lý từ chối và chăm sóc khách hàng qua điện thoại.
-                Luôn đạt hiệu suất cao, duy trì tỷ lệ chuyển đổi tốt và đảm bảo KPI trong môi trường áp lực cao.
-                Có khả năng thích nghi nhanh, làm việc nhóm tốt và tinh thần trách nhiệm cao.
-            </p>
-        </div>
+      <h3>
+        Human Resource Intern • HR Admin • Customer Service Specialist
+      </h3>
 
-        <div class="section">
-            <h2>GIÁO DỤC</h2>
+      <p>
+        Chuyên viên Skilled Tele Payment với hơn 5 năm kinh nghiệm
+        trong lĩnh vực tài chính và chăm sóc khách hàng.
+        Hiện định hướng phát triển chuyên sâu sang lĩnh vực
+        Quản trị nhân lực nhằm nâng cao năng lực quản lý,
+        tuyển dụng và vận hành doanh nghiệp.
+      </p>
 
-            <p class="highlight">Đại học Mở TP Hồ Chí Minh</p>
-            <p class="small">Chuyên ngành: Quản trị nhân lực</p>
-            <p class="small">Đang theo học</p>
-
-            <br>
-
-            <p class="highlight">Kỹ năng bổ trợ</p>
-            <ul class="small">
-                <li>Giao tiếp chuyên nghiệp</li>
-                <li>Đàm phán & thuyết phục</li>
-                <li>Phân tích hành vi khách hàng</li>
-                <li>Quản lý dữ liệu khách hàng</li>
-            </ul>
-        </div>
+      <a href="#contact" class="btn">
+        Liên hệ ngay
+      </a>
 
     </div>
 
-    <!-- RIGHT -->
-    <div class="right">
+    <div class="hero-image">
+      <img src="avatar.jpg" alt="Avatar">
+    </div>
 
-        <div class="section">
-            <h2>KINH NGHIỆM LÀM VIỆC</h2>
+  </div>
 
-            <div class="experience-item">
-                <p class="highlight">Nhân viên Tele Payment</p>
-                <p class="small">Công ty Tài chính TNHH MTV Home Credit Việt Nam</p>
-                <p class="small">09/2021 - Hiện tại</p>
+</header>
 
-                <ul class="small">
-                    <li>Gọi điện nhắc thanh toán và hỗ trợ khách hàng về các khoản vay.</li>
-                    <li>Duy trì KPI > 110% trong nhiều tháng liên tiếp.</li>
-                    <li>Xử lý khiếu nại & khách hàng khó.</li>
-                    <li>Đào tạo nhân viên mới.</li>
-                    <li>Cải tiến quy trình tăng tỷ lệ thanh toán.</li>
-                </ul>
-            </div>
+<!-- ABOUT -->
 
-        </div>
+<section>
 
-        <div class="section">
-            <h2>KỸ NĂNG</h2>
+  <div class="container">
 
-            <ul class="small">
-                <li>Tele Payment chuyên sâu</li>
-                <li>Chăm sóc khách hàng</li>
-                <li>Xử lý từ chối</li>
-                <li>Đàm phán</li>
-                <li>CRM</li>
-            </ul>
-        </div>
+    <h2 class="title">Giới Thiệu</h2>
 
-        <div class="section">
-            <h2>MỤC TIÊU</h2>
-            <p class="small">
-                Phát triển lên vị trí Team Leader trong lĩnh vực Tele Payment và nâng cao hiệu suất đội nhóm.
-            </p>
-        </div>
+    <div class="about">
+
+      <p>
+        Tôi hiện đang công tác tại Home Credit Việt Nam
+        từ tháng 09/2021 đến nay với vị trí Skilled Tele Payment.
+      </p>
+
+      <p>
+        Trong quá trình làm việc, tôi phát triển mạnh các kỹ năng:
+        giao tiếp khách hàng, xử lý tình huống,
+        giải quyết vấn đề và làm việc dưới áp lực cao.
+      </p>
+
+      <p>
+        Song song với công việc hiện tại,
+        tôi đang theo học ngành Quản trị nhân lực
+        tại Đại Học Mở TP. Hồ Chí Minh
+        nhằm mở rộng kiến thức về quản trị con người,
+        tuyển dụng và vận hành nhân sự.
+      </p>
+
+      <p>
+        Tôi luôn hướng đến môi trường chuyên nghiệp,
+        năng động và có cơ hội học hỏi để phát triển
+        lâu dài trong lĩnh vực Human Resources.
+      </p>
 
     </div>
 
-</div>
+  </div>
+
+</section>
+
+<!-- STATS -->
+
+<section>
+
+  <div class="container">
+
+    <h2 class="title">Thành Tựu</h2>
+
+    <div class="stats">
+
+      <div class="stat-box">
+        <h2>5+</h2>
+        <p>Năm kinh nghiệm làm việc</p>
+      </div>
+
+      <div class="stat-box">
+        <h2>1000+</h2>
+        <p>Khách hàng hỗ trợ mỗi tháng</p>
+      </div>
+
+      <div class="stat-box">
+        <h2>90%</h2>
+        <p>Tỷ lệ xử lý khách hàng hiệu quả</p>
+      </div>
+
+      <div class="stat-box">
+        <h2>24/7</h2>
+        <p>Tinh thần học hỏi và phát triển</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- EXPERIENCE -->
+
+<section>
+
+  <div class="container">
+
+    <h2 class="title">Kinh Nghiệm Làm Việc</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+
+        <h3>Home Credit Việt Nam</h3>
+
+        <p><strong>09/2021 - Hiện tại</strong></p>
+
+        <p>
+          Skilled Tele Payment
+        </p>
+
+        <p>
+          Hỗ trợ khách hàng thanh toán,
+          xử lý dữ liệu tài chính,
+          giải quyết tình huống phát sinh
+          và chăm sóc khách hàng chuyên nghiệp.
+        </p>
+
+      </div>
+
+      <div class="timeline-item">
+
+        <h3>Định hướng Human Resource</h3>
+
+        <p><strong>2026+</strong></p>
+
+        <p>
+          Tập trung phát triển trong lĩnh vực:
+          tuyển dụng, HR Admin,
+          đào tạo nhân sự và vận hành nội bộ.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- EDUCATION -->
+
+<section>
+
+  <div class="container">
+
+    <h2 class="title">Học Vấn</h2>
+
+    <div class="cards">
+
+      <div class="card">
+
+        <h3>Đại Học Mở TP. Hồ Chí Minh</h3>
+
+        <p>
+          <strong>Ngành:</strong>
+          Quản trị nhân lực
+        </p>
+
+        <p>
+          <strong>Trạng thái:</strong>
+          Đang theo học
+        </p>
+
+        <p>
+          Nghiên cứu chuyên sâu về:
+          quản trị nhân sự, tuyển dụng,
+          đào tạo và phát triển nguồn nhân lực.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>Chứng chỉ & Kỹ năng</h3>
+
+        <p>• Microsoft Office</p>
+        <p>• Google Workspace</p>
+        <p>• Kỹ năng giao tiếp</p>
+        <p>• Chăm sóc khách hàng</p>
+        <p>• Quản lý dữ liệu</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section>
+
+  <div class="container">
+
+    <h2 class="title">Kỹ Năng</h2>
+
+    <div class="skills">
+
+      <div class="skill">Human Resource</div>
+      <div class="skill">HR Admin</div>
+      <div class="skill">Tuyển dụng cơ bản</div>
+      <div class="skill">Training nội bộ</div>
+      <div class="skill">Microsoft Office</div>
+      <div class="skill">Google Workspace</div>
+      <div class="skill">Customer Service</div>
+      <div class="skill">Làm việc nhóm</div>
+      <div class="skill">Xử lý tình huống</div>
+      <div class="skill">Data Management</div>
+      <div class="skill">Kỹ năng giao tiếp</div>
+      <div class="skill">Time Management</div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CAREER -->
+
+<section>
+
+  <div class="container">
+
+    <h2 class="title">Mục Tiêu Nghề Nghiệp</h2>
+
+    <div class="about">
+
+      <p>
+        Mong muốn trở thành HR Executive / HR Admin chuyên nghiệp,
+        có khả năng hỗ trợ vận hành và phát triển nguồn nhân lực
+        cho doanh nghiệp.
+      </p>
+
+      <p>
+        Với nền tảng kinh nghiệm trong lĩnh vực tài chính
+        và chăm sóc khách hàng,
+        tôi tin rằng bản thân có khả năng thích nghi nhanh,
+        giao tiếp hiệu quả và xử lý công việc tốt dưới áp lực cao.
+      </p>
+
+      <p>
+        Trong tương lai,
+        tôi mong muốn phát triển lâu dài trong môi trường doanh nghiệp hiện đại,
+        chuyên nghiệp và có nhiều cơ hội học hỏi.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+  <div class="container">
+
+    <h2 class="title">Liên Hệ</h2>
+
+    <div class="cards">
+
+      <div class="card">
+
+        <h3>Email</h3>
+
+        <p>
+          dangl@lehai.id.vn
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>Số điện thoại</h3>
+
+        <p>
+          095.07.2000
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>Địa chỉ</h3>
+
+        <p>
+          TP. Hồ Chí Minh
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+
+  © 2026 Dang Luong Le Hai | Human Resource Portfolio
+
+</footer>
 
 </body>
 </html>
